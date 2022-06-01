@@ -29,12 +29,30 @@
             border: 1px solid #000;
             text-align: center;
         }
+        /*
+        tr:nth-child(even){
+            background-color: #ddd;
+        }
+        */
+        .cgrupo{
+            font-weight: bold;
+            background-color: lightcyan;
+        }
+        .cfilmes{
+            font-weight: bold;
+            background-color: lightslategrey;
+        }
     </style>
 </head>
 <body>
-    <h1>Desafio de Tabelas 01</h1>
+    <h1>Desafio de Tabelas 03</h1>
     
     <table>
+        <colgroup>
+            <col class="cgrupo">
+            <col class="cnome">
+            <col class="cfilmes" span="3">
+        </colgroup>
         <caption> Filmes Favoritos</caption>
         <THEAD>
             <tr>
